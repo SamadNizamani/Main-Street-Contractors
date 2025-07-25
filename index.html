@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Emergency Roof Repairs – Maximize Your Insurance Claim. Free Inspection + Same-Day Service by a Family-Owned Company Since 1999.">
+  <title>Main Street Contractors - Emergency Roof Repairs</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header + Navbar */
+    header {
+      background: #0d1b2a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6b00;
+    }
+
+    #mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      nav .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #0d1b2a;
+        padding: 10px 0;
+      }
+
+      nav .menu.active {
+        display: flex;
+      }
+
+      #mobile-toggle {
+        display: block;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1597003725281-6ec63c61f300?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 140px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+
+    .hero a {
+      background: #ff6b00;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #e65a00;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #0d1b2a;
+      margin-bottom: 40px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ff6b00;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, select, button {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #ff6b00;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #e65a00;
+    }
+
+    .why-choose ul {
+      list-style: disc inside;
+      max-width: 600px;
+      margin: auto;
+      padding: 0;
+    }
+
+    footer {
+      background: #0d1b2a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    /* Scroll to Top */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #ff6b00;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      display: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    #scrollTopBtn:hover {
+      background: #e65a00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Main Street Contractors</div>
+      <button id="mobile-toggle">&#9776;</button>
+      <nav>
+        <div class="menu" id="menu">
+          <a href="#hero">Home</a>
+          <a href="#services">Services</a>
+          <a href="#form">Free Inspection</a>
+          <a href="#why">Why Choose Us</a>
+          <a href="tel:+1234567890">Call Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>Emergency Roof Repairs – Maximize Your Insurance Claim</h1>
+    <p>Free Inspection + Same-Day Service | Family-Owned Since 1999</p>
+    <a href="tel:+1234567890">☎️ Call Now: (123) 456-7890</a>
+    <a href="#form">Get Free Roof Inspection</a>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <h2>Our Roofing Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Storm Damage Repair</h3>
+        <p>Fast, professional storm damage repair to protect your home and maximize your insurance coverage.</p>
+      </div>
+      <div class="service-card">
+        <h3>Roof Leak Emergency Fixes</h3>
+        <p>We offer same-day roof leak repairs to prevent further interior and structural damage.</p>
+      </div>
+      <div class="service-card">
+        <h3>Full Roof Replacements</h3>
+        <p>Reliable full roof replacements using quality materials with long-lasting warranties.</p>
+      </div>
+      <div class="service-card">
+        <h3>Insurance Claim Assistance</h3>
+        <p>We work directly with insurance adjusters to ensure you get the coverage you deserve.</p>
+      </div>
+      <div class="service-card">
+        <h3>Warrantied Workmanship</h3>
+        <p>All of our roofing work is backed by industry-leading warranties for your peace of mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="section" id="form">
+    <h2>Schedule Your Free Inspection</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="tel" placeholder="Phone" required>
+      <input type="email" placeholder="Email">
+      <select>
+        <option value="">Select Issue Type</option>
+        <option value="storm">Storm Damage</option>
+        <option value="leak">Leak Repair</option>
+        <option value="full">Full Replacement</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit">Schedule Free Inspection</button>
+    </form>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section why-choose" id="why">
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>Local, family-owned business</li>
+      <li>Work directly with insurance adjusters</li>
+      <li>Same-day emergency service</li>
+      <li>Before/after photo documentation</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Main Street Contractors. All rights reserved.</p>
+    <p><a href="https://www.mainstreetcontractors.net">Visit Main Site</a></p>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <!-- Scripts -->
+  <script>
+    // Scroll to top
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollTopBtn");
+      if (window.scrollY > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Mobile menu toggle
+    document.getElementById("mobile-toggle").addEventListener("click", function () {
+      document.getElementById("menu").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
+
