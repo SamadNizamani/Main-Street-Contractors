@@ -284,22 +284,24 @@
   </section>
 
   <!-- Form -->
-  <section class="section" id="form">
-    <h2>Schedule Your Free Inspection</h2>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="tel" placeholder="Phone" required>
-      <input type="email" placeholder="Email">
-      <select>
-        <option value="">Select Issue Type</option>
-        <option value="storm">Storm Damage</option>
-        <option value="leak">Leak Repair</option>
-        <option value="full">Full Replacement</option>
-        <option value="other">Other</option>
-      </select>
-      <button type="submit">Schedule Free Inspection</button>
-    </form>
-  </section>
+ <section class="section" id="form">
+  <h2>Schedule Your Free Inspection</h2>
+  <form action="https://formsubmit.co/abdulsamadnizamani@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="tel" name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email">
+    <select name="issue_type">
+      <option value="">Select Issue Type</option>
+      <option value="storm">Storm Damage</option>
+      <option value="leak">Leak Repair</option>
+      <option value="full">Full Replacement</option>
+      <option value="other">Other</option>
+    </select>
+    <button type="submit">Schedule Free Inspection</button>
+  </form>
+</section>
+
 
   <!-- Why Choose Us -->
   <section class="section why-choose" id="why">
