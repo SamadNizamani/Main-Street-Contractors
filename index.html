@@ -6,9 +6,34 @@
   <meta name="description" content="Emergency Roof Repairs – Maximize Your Insurance Claim. Free Inspection + Same-Day Service by a Family-Owned Company Since 1999.">
   <title>Main Street Contractors - Emergency Roof Repairs</title>
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/11297/11297017.png">
-  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date()); gtag('config', 'AW-17298683582'); </script>
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582">
+  </script>
+   <script> window.dataLayer = window.dataLayer ||
+   []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17298683582');
+    </script>
+    <!-- Event snippet for Submit lead form conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'});
+</script>
+<!-- Event snippet for Click to call conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
   <style>
     html {
       scroll-behavior: smooth;
@@ -236,30 +261,30 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="nav-container">
-      <div class="logo">Main Street Contractors</div>
-      <button id="mobile-toggle">&#9776;</button>
-      <nav>
-        <div class="menu" id="menu">
-          <a href="#hero">Home</a>
-          <a href="#services">Services</a>
-          <a href="#form">Free Inspection</a>
-          <a href="#why">Why Choose Us</a>
-          <a href="tel:+1234567890">Call Now</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+ <!-- Header -->
+<header>
+  <div class="nav-container">
+    <div class="logo">Main Street Contractors</div>
+    <button id="mobile-toggle">&#9776;</button>
+    <nav>
+      <div class="menu" id="menu">
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#form">Free Inspection</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="tel:+13176100114" onclick="return gtag_report_conversion('tel:+13176100114')">Call Now</a>
+      </div>
+    </nav>
+  </div>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h1>Emergency Roof Repairs – Maximize Your Insurance Claim</h1>
-    <p>Free Inspection + Same-Day Service | Family-Owned Since 1999</p>
-    <a href="tel:+1234567890">☎️ Call Now: (317) 610-0114</a>
-    <a href="#form">Get Free Roof Inspection</a>
-  </section>
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <h1>Emergency Roof Repairs – Maximize Your Insurance Claim</h1>
+  <p>Free Inspection + Same-Day Service | Family-Owned Since 1999</p>
+  <a href="tel:+13176100114" onclick="return gtag_report_conversion('tel:+13176100114')">☎️ Call Now: (317) 610-0114</a>
+  <a href="#form">Get Free Roof Inspection</a>
+</section>
 
   <!-- Services -->
   <section class="section services" id="services">
