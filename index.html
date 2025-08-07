@@ -218,6 +218,52 @@
     }
 
     #scrollTopBtn:hover { background: #e65a00; }
+    /* Testimonials Section */
+.testimonials {
+  background: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.review-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stars {
+  color: #f5b50a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-style: italic;
+  margin: 10px 0;
+  color: #444;
+}
+
+.review-meta,
+.review-services {
+  font-size: 0.9rem;
+  color: #666;
+}
+
   </style>
 </head>
 <body>
@@ -232,6 +278,7 @@
         <a href="#hero">Home</a>
         <a href="#services">Services</a>
         <a href="#form">Free Inspection</a>
+        <a href="#reviews">Reviews</a>
         <a href="#why">Why Choose Us</a>
         <a href="tel:+13176100114" onclick="return gtag_report_conversion('tel:+13176100114')">Call Now</a>
       </div>
@@ -269,6 +316,56 @@
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
   </div>
 </section>
+
+<!-- Testimonials Section -->
+<section class="section testimonials" id="reviews">
+  <h2>What Our Customers Say</h2>
+  <div class="reviews-grid">
+
+    <!-- Review 1 -->
+    <div class="review-card">
+      <h4>Charles Reiss</h4>
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        "Dan and his crew did an excellent job on replacing the gutters and exterior trim. 
+        The crew was efficient and on time. They actually came out the next day to fix it. 
+        It looks better than before it was damaged. I recommend them to any of my friends and neighbors. 
+        Thank you."
+      </p>
+      <p class="review-meta"><strong>Positive:</strong> Punctuality, Professionalism, Value</p>
+      <p class="review-services"><strong>Services:</strong> Exterior painting, Exterior structural repairs, Roof repair</p>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-card">
+      <h4>Tiffany Dillard</h4>
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        "I had the pleasure of speaking with Dan C while seeking an estimate on painting my kitchen cabinets. 
+        Top rate customer service can seem hard to come by, but that’s exactly what I found with Dan. 
+        Although I wasn’t able to commit to the estimate, Dan continued to assist me with paint selection and tips. 
+        It’s refreshing to find an owner willing to help achieve amazing results even if it wasn’t with his company."
+      </p>
+      <p class="review-meta"><strong>Positive:</strong> Quality, Professionalism</p>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="review-card">
+      <h4>Eve Babb</h4>
+      <div class="stars">★★★★★</div>
+      <p class="review-text">
+        "We recently updated our kitchen and master bath. We hired Main Street Contractors for painting and drywall repairs. 
+        We appreciated the professionalism, integrity, and respect shown throughout the project. 
+        Great workmanship at a fair price. 10 out of 10, would DEFINITELY do it again!"
+      </p>
+      <p class="review-meta"><strong>Positive:</strong> Responsiveness, Quality, Professionalism, Value</p>
+      <p class="review-services"><strong>Services:</strong> Custom painting, Drywall repair</p>
+    </div>
+
+  </div>
+</section>
+
+
 
 <!-- Why Choose Us -->
 <section class="section why-choose" id="why">
