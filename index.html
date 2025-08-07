@@ -6,43 +6,44 @@
   <meta name="description" content="Emergency Roof Repairs – Maximize Your Insurance Claim. Free Inspection + Same-Day Service by a Family-Owned Company Since 1999.">
   <title>Main Street Contractors - Emergency Roof Repairs</title>
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/11297/11297017.png">
-  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582">
+
+  <!-- Google Ads Tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17298683582');
   </script>
-   <script> window.dataLayer = window.dataLayer ||
-   []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17298683582');
-    </script>
-    <!-- Event snippet for Submit lead form conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'});
-</script>
-<!-- Event snippet for Click to call conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+
+  <!-- Call Conversion Tracking -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) !== 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
+        'value': 1.0,
+        'currency': 'USD',
+        'event_callback': callback
+      });
+      return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
-      'value': 1.0,
-      'currency': 'USD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+  </script>
+
+  <!-- Form Submission Conversion Tracking -->
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'});
+  </script>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
+    html { scroll-behavior: smooth; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      padding: 0;
       background-color: #f9f9f9;
       color: #333;
     }
@@ -65,10 +66,7 @@ function gtag_report_conversion(url) {
       margin: auto;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+    .logo { font-size: 1.5rem; font-weight: bold; }
 
     nav .menu {
       display: flex;
@@ -82,9 +80,7 @@ function gtag_report_conversion(url) {
       transition: color 0.3s ease;
     }
 
-    nav a:hover {
-      color: #ff6b00;
-    }
+    nav a:hover { color: #ff6b00; }
 
     #mobile-toggle {
       display: none;
@@ -102,48 +98,26 @@ function gtag_report_conversion(url) {
         background: #0d1b2a;
         padding: 10px 0;
       }
-
-      nav .menu.active {
-        display: flex;
-      }
-
-      #mobile-toggle {
-        display: block;
-      }
-
-      .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      nav .menu.active { display: flex; }
+      #mobile-toggle { display: block; }
+      .nav-container { flex-direction: column; align-items: flex-start; }
     }
 
     /* Hero Section */
-   .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('https://gutterethics.com/wp-content/uploads/2022/11/Gutter-Ethics-Our-Services-storm-roof-repair-hero-.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 140px 20px;
-  }
-
- @media (max-width: 768px) {
-  .hero {
-    padding: 100px 15px;
-    background-position: center top;
-  }
-}
-
-
-    .hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 15px;
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://gutterethics.com/wp-content/uploads/2022/11/Gutter-Ethics-Our-Services-storm-roof-repair-hero-.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 140px 20px;
     }
 
-    .hero p {
-      font-size: 1.3em;
-      margin-bottom: 30px;
-      font-style: italic;
+    @media (max-width: 768px) {
+      .hero { padding: 100px 15px; background-position: center top; }
     }
+
+    .hero h1 { font-size: 2.8em; margin-bottom: 15px; }
+    .hero p { font-size: 1.3em; margin-bottom: 30px; font-style: italic; }
 
     .hero a {
       background: #ff6b00;
@@ -156,9 +130,7 @@ function gtag_report_conversion(url) {
       transition: background 0.3s ease;
     }
 
-    .hero a:hover {
-      background: #e65a00;
-    }
+    .hero a:hover { background: #e65a00; }
 
     .section {
       padding: 60px 20px;
@@ -166,11 +138,7 @@ function gtag_report_conversion(url) {
       margin: auto;
     }
 
-    .section h2 {
-      text-align: center;
-      color: #0d1b2a;
-      margin-bottom: 40px;
-    }
+    .section h2 { text-align: center; color: #0d1b2a; margin-bottom: 40px; }
 
     .services-grid {
       display: grid;
@@ -191,6 +159,7 @@ function gtag_report_conversion(url) {
       color: #ff6b00;
     }
 
+    /* Form */
     form {
       display: flex;
       flex-direction: column;
@@ -214,9 +183,7 @@ function gtag_report_conversion(url) {
       font-weight: bold;
     }
 
-    button:hover {
-      background: #e65a00;
-    }
+    button:hover { background: #e65a00; }
 
     .why-choose ul {
       list-style: disc inside;
@@ -232,10 +199,7 @@ function gtag_report_conversion(url) {
       text-align: center;
     }
 
-    footer a {
-      color: #ccc;
-      text-decoration: none;
-    }
+    footer a { color: #ccc; text-decoration: none; }
 
     /* Scroll to Top */
     #scrollTopBtn {
@@ -253,15 +217,12 @@ function gtag_report_conversion(url) {
       z-index: 1001;
     }
 
-    #scrollTopBtn:hover {
-      background: #e65a00;
-    }
+    #scrollTopBtn:hover { background: #e65a00; }
   </style>
-
 </head>
 <body>
 
- <!-- Header -->
+<!-- Header -->
 <header>
   <div class="nav-container">
     <div class="logo">Main Street Contractors</div>
@@ -286,105 +247,67 @@ function gtag_report_conversion(url) {
   <a href="#form">Get Free Roof Inspection</a>
 </section>
 
-  <!-- Services -->
-  <section class="section services" id="services">
-    <h2>Our Roofing Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Storm Damage Repair</h3>
-        <p>Fast, professional storm damage repair to protect your home and maximize your insurance coverage.</p>
-      </div>
-      <div class="service-card">
-        <h3>Roof Leak Emergency Fixes</h3>
-        <p>We offer same-day roof leak repairs to prevent further interior and structural damage.</p>
-      </div>
-      <div class="service-card">
-        <h3>Full Roof Replacements</h3>
-        <p>Reliable full roof replacements using quality materials with long-lasting warranties.</p>
-      </div>
-      <div class="service-card">
-        <h3>Insurance Claim Assistance</h3>
-        <p>We work directly with insurance adjusters to ensure you get the coverage you deserve.</p>
-      </div>
-      <div class="service-card">
-        <h3>Warrantied Workmanship</h3>
-        <p>All of our roofing work is backed by industry-leading warranties for your peace of mind.</p>
-      </div>
-    </div>
-  </section>
-
+<!-- Services -->
+<section class="section services" id="services">
+  <h2>Our Roofing Services</h2>
+  <div class="services-grid">
+    <div class="service-card"><h3>Storm Damage Repair</h3><p>Fast, professional storm damage repair to protect your home and maximize your insurance coverage.</p></div>
+    <div class="service-card"><h3>Roof Leak Emergency Fixes</h3><p>Same-day roof leak repairs to prevent further interior and structural damage.</p></div>
+    <div class="service-card"><h3>Full Roof Replacements</h3><p>Reliable full roof replacements using quality materials with long-lasting warranties.</p></div>
+    <div class="service-card"><h3>Insurance Claim Assistance</h3><p>We work directly with insurance adjusters to ensure you get the coverage you deserve.</p></div>
+    <div class="service-card"><h3>Warrantied Workmanship</h3><p>All work backed by industry-leading warranties for your peace of mind.</p></div>
+  </div>
+</section>
 
 <!-- Form Section -->
 <section class="section" id="form">
   <h2>Schedule Your Free Inspection</h2>
   <div style="max-width: 600px; margin: auto;">
-    <iframe
-      src="https://api.leadconnectorhq.com/widget/form/Bp66RK3RubWrV2l8JNlP"
+    <iframe src="https://api.leadconnectorhq.com/widget/form/Bp66RK3RubWrV2l8JNlP"
       style="width:100%; height: 600px; border:none; border-radius:5px;"
-      id="inline-Bp66RK3RubWrV2l8JNlP" 
-      data-layout="{'id':'INLINE'}"
-      data-trigger-type="alwaysShow"
-      data-trigger-value=""
-      data-activation-type="alwaysActivated"
-      data-activation-value=""
-      data-deactivation-type="neverDeactivate"
-      data-deactivation-value=""
-      data-form-name="Roofing Leads Form"
-      data-height="568"
-      data-layout-iframe-id="inline-Bp66RK3RubWrV2l8JNlP"
-      data-form-id="Bp66RK3RubWrV2l8JNlP"
-      title="Roofing Leads Form">
-    </iframe>
+      title="Roofing Leads Form"></iframe>
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
   </div>
 </section>
 
+<!-- Why Choose Us -->
+<section class="section why-choose" id="why">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>Local, family-owned business</li>
+    <li>Work directly with insurance adjusters</li>
+    <li>Same-day emergency service</li>
+    <li>Before/after photo documentation</li>
+    <li>Warranty provided</li>
+    <li>Fully licensed and bonded, 5-star reviews</li>
+    <li>We fight for the maximum return on your claim</li>
+  </ul>
+</section>
 
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Main Street Contractors. All rights reserved.</p>
+  <p><a href="https://www.mainstreetcontractors.net">Visit Main Site</a></p>
+</footer>
 
-  <!-- Why Ch oose Us -->
-  <section class="section why-choose" id="why">
-    <h2>Why Choose Us</h2>
-    <ul>
-      <li>Local, family-owned business</li>
-      <li>Work directly with insurance adjusters</li>
-      <li>Same-day emergency service</li>
-      <li>Before/after photo documentation</li>
-      <li>You can add warranty provided</li>
-      <li>fully liscensed and bonded,5 star reviews</li>
-      <li>will fight for the maximum return on your claim</li>
-    </ul>
-  </section>
+<!-- Scroll to Top -->
+<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Main Street Contractors. All rights reserved.</p>
-    <p><a href="https://www.mainstreetcontractors.net">Visit Main Site</a></p>
-  </footer>
+<!-- Scripts -->
+<script>
+  // Scroll to Top Button
+  window.onscroll = function () {
+    const btn = document.getElementById("scrollTopBtn");
+    btn.style.display = window.scrollY > 300 ? "block" : "none";
+  };
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
-  <!-- Scroll to Top -->
-  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
-
-  <!-- Scripts -->
-  <script>
-    // Scroll to top
-    window.onscroll = function () {
-      const btn = document.getElementById("scrollTopBtn");
-      if (window.scrollY > 300) {
-        btn.style.display = "block";
-      } else {
-        btn.style.display = "none";
-      }
-    };
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    // Mobile menu toggle
-    document.getElementById("mobile-toggle").addEventListener("click", function () {
-      document.getElementById("menu").classList.toggle("active");
-    });
-  </script>
+  // Mobile Menu Toggle
+  document.getElementById("mobile-toggle").addEventListener("click", function () {
+    document.getElementById("menu").classList.toggle("active");
+  });
+</script>
 </body>
 </html>
-
