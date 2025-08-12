@@ -1,410 +1,1117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Emergency Roof Repairs – Maximize Your Insurance Claim. Free Inspection + Same-Day Service by a Family-Owned Company Since 1999.">
-  <title>Main Street Contractors - Emergency Roof Repairs</title>
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/11297/11297017.png">
-
-  <!-- Google Ads Tag -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17298683582');
-  </script>
-
-  <!-- Call Conversion Tracking -->
-  <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) !== 'undefined') {
-          window.location = url;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Street Contractors | Premium Roofing Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17298683582');
+    </script>
+    
+    <style>
+        :root {
+            --primary: #ff6b00;
+            --primary-dark: #e65a00;
+            --secondary: #0d1b2a;
+            --accent: #1a73e8;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --success: #28a745;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
         }
-      };
-      gtag('event', 'conversion', {
-        'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
-        'value': 1.0,
-        'currency': 'USD',
-        'event_callback': callback
-      });
-      return false;
-    }
-  </script>
-
-  <!-- Form Submission Conversion Tracking -->
-  <script>
-    gtag('event', 'conversion', {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'});
-  </script>
-
-  <style>
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    /* Header + Navbar */
-    header {
-      background: #0d1b2a;
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .logo { font-size: 1.5rem; font-weight: bold; }
-
-    nav .menu {
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover { color: #ff6b00; }
-
-    #mobile-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      nav .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #0d1b2a;
-        padding: 10px 0;
-      }
-      nav .menu.active { display: flex; }
-      #mobile-toggle { display: block; }
-      .nav-container { flex-direction: column; align-items: flex-start; }
-    }
-
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url('https://gutterethics.com/wp-content/uploads/2022/11/Gutter-Ethics-Our-Services-storm-roof-repair-hero-.jpg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 140px 20px;
-    }
-
-    @media (max-width: 768px) {
-      .hero { padding: 100px 15px; background-position: center top; }
-    }
-
-    .hero h1 { font-size: 2.8em; margin-bottom: 15px; }
-    .hero p { font-size: 1.3em; margin-bottom: 30px; font-style: italic; }
-
-    .hero a {
-      background: #ff6b00;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      margin: 10px;
-      display: inline-block;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
-
-    .hero a:hover { background: #e65a00; }
-
-    .section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section h2 { text-align: center; color: #0d1b2a; margin-bottom: 40px; }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .service-card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .service-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #ff6b00;
-    }
-
-    /* Form */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    input, select, button {
-      padding: 12px;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background: #ff6b00;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover { background: #e65a00; }
-
-    .why-choose ul {
-      list-style: disc inside;
-      max-width: 600px;
-      margin: auto;
-      padding: 0;
-    }
-
-    footer {
-      background: #0d1b2a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer a { color: #ccc; text-decoration: none; }
-
-    /* Scroll to Top */
-    #scrollTopBtn {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #ff6b00;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 50%;
-      font-size: 20px;
-      display: none;
-      cursor: pointer;
-      z-index: 1001;
-    }
-
-    #scrollTopBtn:hover { background: #e65a00; }
-    /* Testimonials Section */
-.testimonials {
-  background: #fff;
-  padding: 50px 20px;
-  text-align: center;
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255,107,0,0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--secondary);
+        }
+        
+        .btn-lg {
+            padding: 16px 32px;
+            font-size: 1.1rem;
+        }
+        
+        /* Alert Banner */
+        .alert-banner {
+            background: var(--danger);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .alert-banner:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .logo i {
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .nav-menu a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover:after,
+        .nav-menu a.active:after {
+            width: 100%;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section with Form */
+        .hero {
+            background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.9)), 
+                        url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .hero-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .hero-content {
+            flex: 1;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+        
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        
+        .hero-features {
+            margin: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .feature-item i {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+        
+        .hero-form-container {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 0;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            border: 3px solid var(--primary);
+            overflow: hidden;
+        }
+        
+        .form-wrapper {
+            height: 568px;
+            width: 100%;
+        }
+        
+        /* Services */
+        .services {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.8rem;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            border: 1px solid var(--light-gray);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+        
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.05);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .service-content h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        .service-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        /* Insurance Process */
+        .insurance .section-header h2 {
+    color: white !important;
+    font-weight: 700 !important;
 }
 
-.testimonials h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+.insurance .section-header p {
+    color: white !important;
 }
-
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.review-card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: left;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.stars {
-  color: #f5b50a;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.review-text {
-  font-style: italic;
-  margin: 10px 0;
-  color: #444;
-}
-
-.review-meta,
-.review-services {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-  </style>
+        .insurance {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--secondary), #3a3838);
+            color: white;
+        }
+        
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            max-width: 250px;
+            transition: var(--transition);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            background: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            z-index: 2;
+        }
+        
+        .step-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .step-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background: var(--light);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: var(--light-gray);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .stars {
+            color: var(--warning);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            margin-left: 40px;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 25px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-top: 1px solid var(--light-gray);
+            padding-top: 20px;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-col h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-col h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+        
+        .footer-about p {
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .contact-item i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            min-width: 25px;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-container {
+                flex-direction: column;
+            }
+            
+            .hero-content, .hero-form-container {
+                width: 100%;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.3rem;
+            }
+            
+            .form-wrapper {
+                height: 500px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--secondary);
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            }
+            
+            .nav-menu.active {
+                display: flex;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero {
+                padding: 80px 0;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.3rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2.2rem;
+            }
+            
+            .form-wrapper {
+                height: 500px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .form-wrapper {
+                height: 520px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Alert Banner -->
+    <div class="alert-banner">
+        ACT NOW! Limited availability for emergency inspections this week
+    </div>
 
-<!-- Header -->
-<header>
-  <div class="nav-container">
-    <div class="logo">Main Street Contractors</div>
-    <button id="mobile-toggle">&#9776;</button>
-    <nav>
-      <div class="menu" id="menu">
-        <a href="#hero">Home</a>
-        <a href="#services">Services</a>
-        <a href="#form">Free Inspection</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#why">Why Choose Us</a>
-        <a href="tel:+13176100114" onclick="return gtag_report_conversion('tel:+13176100114')">Call Now</a>
-      </div>
-    </nav>
-  </div>
-</header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <a href="#" class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Main Street Contractors</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#insurance">Insurance</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="tel:+13176100114" class="btn btn-secondary" onclick="return gtag_report_conversion('tel:+13176100114');">Call Now</a></li>
+                </ul>
+                
+                <button class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<!-- Hero Section -->
-<section class="hero" id="hero">
-  <h1>Emergency Roof Repairs – Maximize Your Insurance Claim</h1>
-  <p>Free Inspection + Same-Day Service | Family-Owned Since 1999</p>
-  <a href="tel:+13176100114" onclick="return gtag_report_conversion('tel:+13176100114')">☎️ Call Now: (317) 610-0114</a>
-  <a href="#form">Get Free Roof Inspection</a>
-</section>
+    <!-- Hero with Form -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1>Emergency Roof Repairs & Insurance Claim Assistance</h1>
+                    <p>Free Inspection + Same-Day Service | Family-Owned Since 1999</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Emergency Service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free Roof Inspections</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Insurance Claim Experts</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>25+ Years Experience</span>
+                        </div>
+                    </div>
+                    
+                    <a href="tel:+13176100114" class="btn btn-primary btn-lg" onclick="return gtag_report_conversion('tel:+13176100114');">
+                        <i class="fas fa-phone"></i> Call Now: (317) 610-0114
+                    </a>
+                </div>
+                
+                <div class="hero-form-container">
+                    <div class="form-wrapper">
+                        <iframe
+                            src="https://api.leadconnectorhq.com/widget/form/Bp66RK3RubWrV2l8JNlP"
+                            style="width:100%;height:100%;border:none;border-radius:3px"
+                            id="inline-Bp66RK3RubWrV2l8JNlP" 
+                            data-layout="{'id':'INLINE'}"
+                            data-trigger-type="alwaysShow"
+                            data-trigger-value=""
+                            data-activation-type="alwaysActivated"
+                            data-activation-value=""
+                            data-deactivation-type="neverDeactivate"
+                            data-deactivation-value=""
+                            data-form-name="Roofing Leads Form"
+                            data-height="568"
+                            data-layout-iframe-id="inline-Bp66RK3RubWrV2l8JNlP"
+                            data-form-id="Bp66RK3RubWrV2l8JNlP"
+                            title="Roofing Leads Form"
+                            onload="trackFormConversion()"
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Services -->
-<section class="section services" id="services">
-  <h2>Our Roofing Services</h2>
-  <div class="services-grid">
-    <div class="service-card"><h3>Storm Damage Repair</h3><p>Fast, professional storm damage repair to protect your home and maximize your insurance coverage.</p></div>
-    <div class="service-card"><h3>Roof Leak Emergency Fixes</h3><p>Same-day roof leak repairs to prevent further interior and structural damage.</p></div>
-    <div class="service-card"><h3>Full Roof Replacements</h3><p>Reliable full roof replacements using quality materials with long-lasting warranties.</p></div>
-    <div class="service-card"><h3>Insurance Claim Assistance</h3><p>We work directly with insurance adjusters to ensure you get the coverage you deserve.</p></div>
-    <div class="service-card"><h3>Warrantied Workmanship</h3><p>All work backed by industry-leading warranties for your peace of mind.</p></div>
-  </div>
-</section>
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Professional Roofing Services</h2>
+                <p>Comprehensive solutions for all your roofing needs in Indianapolis</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://www.ahconstructionco.com/wp-content/uploads/2023/10/Fallen-Tree.jpg" alt="Storm Damage Repair">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                        </div>
+                        <h3>Storm Damage Repair</h3>
+                        <p>Rapid response to storm damage with insurance claim assistance to maximize your coverage and restore your roof's integrity.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Roof Replacement">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-house-damage"></i>
+                        </div>
+                        <h3>Full Roof Replacement</h3>
+                        <p>Complete roof replacement using premium materials with industry-leading warranties for lasting protection.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Roof Leak Repair">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Emergency Leak Repair</h3>
+                        <p>24/7 emergency service to stop leaks and prevent further damage to your property with immediate response.</p>
+                    </div>
+                </div>
+                
+                <!-- Roof Inspection Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Roof Inspection">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Roof Inspections</h3>
+                        <p>Main Street Contractors offers trusted residential roof inspections in Indianapolis. Our team of professionals can detect and address potential issues early on to avoid costly repairs.</p>
+                    </div>
+                </div>
+                
+                <!-- Hail Damage Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://www.atozroofingdenver.com/wp-content/uploads/2020/07/metal-roof-hail-damage.jpg" alt="Hail Damage">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud-bolt"></i>
+                        </div>
+                        <h3>Hail Damage Repair</h3>
+                        <p>Main Street Contractors offers expert hail damage resolution services to fortify homes and businesses. We provide free hail damage roof inspections using advanced drone technology to identify and address any signs of damage.</p>
+                    </div>
+                </div>
+                
+                <!-- Restoration Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1628133287836-40bd5453bed1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Restoration">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>Restoration Services</h3>
+                        <p>Main Street Contractors specializes in hail, water, and fire damage restoration services. Using advanced technology, we assess and repair damage caused by hail. We also provide water damage restoration and preventative measures.</p>
+                    </div>
+                </div>
+                
+                <!-- Metal Roof Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://securedroofingandsolar.com/wp-content/uploads/2024/05/roof-tech-installing-a-metal-roof.webp" alt="Metal Roof">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Metal Roof Services</h3>
+                        <p>Specialized installation and repair of premium metal roofing systems. Our metal roofs offer superior durability, energy efficiency, and longevity with minimal maintenance requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Form Section -->
-<section class="section" id="form">
-  <h2>Schedule Your Free Inspection</h2>
-  <div style="max-width: 600px; margin: auto;">
-    <iframe src="https://api.leadconnectorhq.com/widget/form/Bp66RK3RubWrV2l8JNlP"
-      style="width:100%; height: 600px; border:none; border-radius:5px;"
-      title="Roofing Leads Form"></iframe>
+    <!-- Insurance Process -->
+    <section class="insurance" id="insurance">
+        <div class="container">
+            <div class="section-header">
+                <h2>Maximize Your Insurance Claim</h2>
+                <p>We help homeowners navigate the insurance process to get the coverage they deserve</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Free Inspection</h3>
+                    <p>We assess damage and document with photos for your claim.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Claim Filing</h3>
+                    <p>We help file your claim correctly with the insurance company.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Adjuster Meeting</h3>
+                    <p>We meet with adjusters to ensure proper damage assessment.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Maximize Settlement</h3>
+                    <p>We negotiate to get you the maximum settlement you deserve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "After a severe storm damaged our roof, Main Street Contractors helped us navigate the insurance claim process and got us a settlement that was $8,500 more than we expected. Their team was professional and completed the work in just 3 days."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Indianapolis, IN</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "We had a major roof leak during heavy rains. I called Main Street Contractors at 8 PM and they had a crew at my house by 10 PM with a temporary fix. The next day they completed permanent repairs. Amazing emergency service!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Thompson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Thompson</h4>
+                            <p>Carmel, IN</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The metal roof installation from Main Street Contractors transformed our home. It's not only beautiful but has significantly reduced our energy bills. Their team was professional from start to finish."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer Lopez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Jennifer Lopez</h4>
+                            <p>Fishers, IN</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <h3>Main Street Contractors</h3>
+                    <p>Family-owned roofing company serving the community since 1999. Emergency repairs, roof replacements, and insurance claim assistance.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#insurance">Insurance Claims</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Storm Damage Repair</a></li>
+                        <li><a href="#">Roof Leak Repair</a></li>
+                        <li><a href="#">Full Roof Replacement</a></li>
+                        <li><a href="#">Roof Inspection</a></li>
+                        <li><a href="#">Hail Damage Repair</a></li>
+                        <li><a href="#">Restoration Services</a></li>
+                        <li><a href="#">Metal Roof Services</a></li>
+                        <li><a href="#">Emergency Roof Repair</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Indianapolis, Indiana, United States</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span><a href="tel:+13176100114" onclick="return gtag_report_conversion('tel:+13176100114');">(317) 610-0114</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@mainstreet-contractors.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Emergency Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Main Street Contractors. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://link.msgsndr.com/js/form_embed.js"></script>
-  </div>
-</section>
-
-<!-- Testimonials Section -->
-<section class="section testimonials" id="reviews">
-  <h2>What Our Customers Say</h2>
-  <div class="reviews-grid">
-
-    <!-- Review 1 -->
-    <div class="review-card">
-      <h4>Charles Reiss</h4>
-      <div class="stars">★★★★★</div>
-      <p class="review-text">
-        "Dan and his crew did an excellent job on replacing the gutters and exterior trim. 
-        The crew was efficient and on time. They actually came out the next day to fix it. 
-        It looks better than before it was damaged. I recommend them to any of my friends and neighbors. 
-        Thank you."
-      </p>
-      <p class="review-meta"><strong>Positive:</strong> Punctuality, Professionalism, Value</p>
-      <p class="review-services"><strong>Services:</strong> Exterior painting, Exterior structural repairs, Roof repair</p>
-    </div>
-
-    <!-- Review 2 -->
-    <div class="review-card">
-      <h4>Tiffany Dillard</h4>
-      <div class="stars">★★★★★</div>
-      <p class="review-text">
-        "I had the pleasure of speaking with Dan C while seeking an estimate on painting my kitchen cabinets. 
-        Top rate customer service can seem hard to come by, but that’s exactly what I found with Dan. 
-        Although I wasn’t able to commit to the estimate, Dan continued to assist me with paint selection and tips. 
-        It’s refreshing to find an owner willing to help achieve amazing results even if it wasn’t with his company."
-      </p>
-      <p class="review-meta"><strong>Positive:</strong> Quality, Professionalism</p>
-    </div>
-
-    <!-- Review 3 -->
-    <div class="review-card">
-      <h4>Eve Babb</h4>
-      <div class="stars">★★★★★</div>
-      <p class="review-text">
-        "We recently updated our kitchen and master bath. We hired Main Street Contractors for painting and drywall repairs. 
-        We appreciated the professionalism, integrity, and respect shown throughout the project. 
-        Great workmanship at a fair price. 10 out of 10, would DEFINITELY do it again!"
-      </p>
-      <p class="review-meta"><strong>Positive:</strong> Responsiveness, Quality, Professionalism, Value</p>
-      <p class="review-services"><strong>Services:</strong> Custom painting, Drywall repair</p>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- Why Choose Us -->
-<section class="section why-choose" id="why">
-  <h2>Why Choose Us</h2>
-  <ul>
-    <li>Local, family-owned business</li>
-    <li>Work directly with insurance adjusters</li>
-    <li>Same-day emergency service</li>
-    <li>Before/after photo documentation</li>
-    <li>Warranty provided</li>
-    <li>Fully licensed and bonded, 5-star reviews</li>
-    <li>We fight for the maximum return on your claim</li>
-  </ul>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2025 Main Street Contractors. All rights reserved.</p>
-  <p><a href="https://www.mainstreetcontractors.net">Visit Main Site</a></p>
-</footer>
-
-<!-- Scroll to Top -->
-<button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
-
-<!-- Scripts -->
-<script>
-  // Scroll to Top Button
-  window.onscroll = function () {
-    const btn = document.getElementById("scrollTopBtn");
-    btn.style.display = window.scrollY > 300 ? "block" : "none";
-  };
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  // Mobile Menu Toggle
-  document.getElementById("mobile-toggle").addEventListener("click", function () {
-    document.getElementById("menu").classList.toggle("active");
-  });
-</script>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+        
+        // Event snippet for Click to call conversion page
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
+              'value': 1.0,
+              'currency': 'USD',
+              'event_callback': callback
+          });
+          return false;
+        }
+        
+        // Event snippet for Submit lead form conversion page
+        function trackFormConversion() {
+          gtag('event', 'conversion', {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'});
+        }
+    </script>
 </body>
 </html>
