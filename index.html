@@ -7,38 +7,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- Google tag (gtag.js) with conversion functions -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17298683582');
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      // Phone call conversion function
-      function gtag_report_conversion(url) {
-        var callback = function() {
-          if (typeof url != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-          'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
-          'value': 1.0,
-          'currency': 'USD',
-          'event_callback': callback
-        });
-        return false;
-      }
+  gtag('config', 'AW-17298683582');
+</script>
 
-      // Form submission conversion function
-      function trackFormConversion() {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'
-        });
-      }
-    </script>
-    
+
+<!-- Event snippet for Click to call conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
+<!-- Event snippet for Submit lead form conversion page -->
+<script>
+  gtag('event', 'conversion',
+
+   {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'}
+
+   );
+</script>
+
+
     <style>
         :root {
             --primary: #ff6b00;
