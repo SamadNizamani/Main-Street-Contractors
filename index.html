@@ -21,8 +21,14 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-17298683582');
+
+
+
+    gtag('config', 'AW-17298683582/zE_LCNqT3osbEL7t07hA', {
+    'phone_conversion_number': '(317) 610-0114'
+  });
+  
 </script>
 
 <!-- Event snippet for Submit lead form conversion page -->
@@ -30,24 +36,7 @@
   gtag('event', 'conversion', {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'});
 </script>
 
-<!-- Event snippet for Click to call conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
-      'value': 1.0,
-      'currency': 'USD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+
 
 
 
@@ -839,7 +828,7 @@ function gtag_report_conversion(url) {
                     <li><a href="#services">Services</a></li>
                     <li><a href="#insurance">Insurance</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="tel:+13176100114" class="btn btn-secondary" onclick="return gtag_report_conversion('tel:+13176100114');">Call Now</a></li>
+                    <li><a href="tel:+13176100114" class="btn btn-secondary";>Call Now</a></li>
                 </ul>
                 
                 <button class="mobile-toggle">
@@ -876,7 +865,7 @@ function gtag_report_conversion(url) {
                         </div>
                     </div>
                     
-                    <a href="tel:+13176100114" class="btn btn-primary btn-lg" onclick="return gtag_report_conversion('tel:+13176100114');">
+                    <a href="tel:+13176100114" class="btn btn-primary btn-lg">
                         <i class="fas fa-phone"></i> Call Now: (317) 610-0114
                     </a>
                     
@@ -1196,7 +1185,7 @@ function gtag_report_conversion(url) {
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span><a href="tel:+13176100114" onclick="return gtag_report_conversion('tel:+13176100114');">(317) 610-0114</a></span>
+                            <span><a href="tel:+13176100114">(317) 610-0114</a></span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-globe"></i>
