@@ -15,44 +15,40 @@
     })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
     <!-- End Google Tag Manager -->
     
-    <!-- Google tag (gtag.js) - Consolidated -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17298683582');
-      
-      // Improved conversion function
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-          'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
-          'value': 1.0,
-          'currency': 'USD',
-          'event_callback': callback
-        });
-        return false;
-      }
-      
-      // Track form submissions from the iframe
-      window.addEventListener('message', function(event) {
-        // Check if the message is from the form iframe and indicates a submission
-        if (event.data && event.data.type === 'FORM_SUBMISSION') {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA',
-            'value': 1.0,
-            'currency': 'USD'
-          });
-        }
-      });
-    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17298683582"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-   </script>
+  gtag('config', 'AW-17298683582');
+</script>
+
+<!-- Event snippet for Submit lead form conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-17298683582/UNfvCOGLjoEbEL7t07hA'});
+</script>
+
+<!-- Event snippet for Click to call conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17298683582/KHkqCInB24EbEL7t07hA',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 
 
     <style>
