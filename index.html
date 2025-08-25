@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Street Contractors | Premium Roofing Solutions</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PXL8LHBV');</script>
+    <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXL8LHBV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <!-- Alert Banner -->
     <div class="alert-banner">
         ACT NOW! Limited availability for emergency inspections this week
@@ -90,7 +102,6 @@
                                 <label for="phone">Phone Number *</label>
                                 <input type="tel" id="phone" name="phone" required>
                             </div>
-                            
                             <div class="form-group">
                                 <label for="issue">Roofing Issue</label>
                                 <select id="issue" name="issue">
@@ -103,7 +114,10 @@
                                     <option value="other">Other</option>
                                 </select>
                             </div>
-                        
+                            <div class="form-group">
+                                <label for="message">Additional Details</label>
+                                <textarea id="message" name="message" rows="3"></textarea>
+                            </div>
                             <div class="form-group">
                                 <div class="g-recaptcha" data-sitekey="6LcJmswpAAAAAKo6sA4dJOMp6_5Dc7w1QyQnG9S0"></div>
                             </div>
@@ -137,9 +151,87 @@
                     </div>
                 </div>
                 
-                <!-- Other service cards remain the same -->
-                <!-- ... -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Roof Replacement">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-house-damage"></i>
+                        </div>
+                        <h3>Full Roof Replacement</h3>
+                        <p>Complete roof replacement using premium materials with industry-leading warranties for lasting protection.</p>
+                    </div>
+                </div>
                 
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Roof Leak Repair">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Emergency Leak Repair</h3>
+                        <p>24/7 emergency service to stop leaks and prevent further damage to your property with immediate response.</p>
+                    </div>
+                </div>
+                
+                <!-- Roof Inspection Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Roof Inspection">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Roof Inspections</h3>
+                        <p>Main Street Contractors offers trusted residential roof inspections in Indianapolis. Our team of professionals can detect and address potential issues early on to avoid costly repairs.</p>
+                    </div>
+                </div>
+                
+                <!-- Hail Damage Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://www.atozroofingdenver.com/wp-content/uploads/2020/07/metal-roof-hail-damage.jpg" alt="Hail Damage">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud-bolt"></i>
+                        </div>
+                        <h3>Hail Damage Repair</h3>
+                        <p>Main Street Contractors offers expert hail damage resolution services to fortify homes and businesses. We provide free hail damage roof inspections using advanced drone technology to identify and address any signs of damage.</p>
+                    </div>
+                </div>
+                
+                <!-- Restoration Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1628133287836-40bd5453bed1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Restoration">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3>Restoration Services</h3>
+                        <p>Main Street Contractors specializes in hail, water, and fire damage restoration services. Using advanced technology, we assess and repair damage caused by hail. We also provide water damage restoration and preventative measures.</p>
+                    </div>
+                </div>
+                
+                <!-- Metal Roof Service -->
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://securedroofingandsolar.com/wp-content/uploads/2024/05/roof-tech-installing-a-metal-roof.webp" alt="Metal Roof">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Metal Roof Services</h3>
+                        <p>Specialized installation and repair of premium metal roofing systems. Our metal roofs offer superior durability, energy efficiency, and longevity with minimal maintenance requirements.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -162,9 +254,32 @@
                     <p>We assess damage and document with photos for your claim.</p>
                 </div>
                 
-                <!-- Other steps remain the same -->
-                <!-- ... -->
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Claim Filing</h3>
+                    <p>We help file your claim correctly with the insurance company.</p>
+                </div>
                 
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Adjuster Meeting</h3>
+                    <p>We meet with adjusters to ensure proper damage assessment.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Maximize Settlement</h3>
+                    <p>We negotiate to get you the maximum settlement you deserve.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -200,9 +315,49 @@
                     </div>
                 </div>
                 
-                <!-- Other testimonials remain the same -->
-                <!-- ... -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "We had a major roof leak during heavy rains. I called Main Street Contractors at 8 PM and they had a crew at my house by 10 PM with a temporary fix. The next day they completed permanent repairs. Amazing emergency service!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Thompson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Thompson</h4>
+                            <p>Carmel, IN</p>
+                        </div>
+                    </div>
+                </div>
                 
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The metal roof installation from Main Street Contractors transformed our home. It's not only beautiful but has significantly reduced our energy bills. Their team was professional from start to finish."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer Lopez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Jennifer Lopez</h4>
+                            <p>Fishers, IN</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -222,9 +377,57 @@
                     </div>
                 </div>
                 
-                <!-- Other footer sections remain the same -->
-                <!-- ... -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#insurance">Insurance Claims</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
                 
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Storm Damage Repair</a></li>
+                        <li><a href="#">Roof Leak Repair</a></li>
+                        <li><a href="#">Full Roof Replacement</a></li>
+                        <li><a href="#">Roof Inspection</a></li>
+                        <li><a href="#">Hail Damage Repair</a></li>
+                        <li><a href="#">Restoration Services</a></li>
+                        <li><a href="#">Metal Roof Services</a></li>
+                        <li><a href="#">Emergency Roof Repair</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Indianapolis, Indiana, United States</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span><a href="tel:+13176100114">(317) 610-0114</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span><a href="https://mainstreetcontractors.net/" target="_blank">mainstreetcontractors.net</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@mainstreet-contractors.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Emergency Service</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="copyright">
