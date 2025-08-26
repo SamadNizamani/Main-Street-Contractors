@@ -24,81 +24,64 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission with reCAPTCHA
-document.getElementById('roofingForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Validate reCAPTCHA
-    const recaptchaResponse = grecaptcha.getResponse();
-    if (!recaptchaResponse) {
-        alert('Please complete the reCAPTCHA verification.');
-        return;
-    }
-    
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        address: document.getElementById('address').value,
-        issue: document.getElementById('issue').value,
-        message: document.getElementById('message').value,
-        timestamp: new Date().toISOString(),
-        recaptcha: recaptchaResponse
-    };
-    
-    // Store form data in sessionStorage for thank you page
-    sessionStorage.setItem('formData', JSON.stringify(formData));
-    
-    // Send data to Go HighLevel CRM
-    sendToGoHighLevel(formData);
-});
-
-// Function to send form data to Go HighLevel CRM
-function sendToGoHighLevel(formData) {
-    // Replace with your Go HighLevel form endpoint
-    // You can find this in your Go HighLevel account under:
-    // Settings → Inbound Form → Create Inbound Form
-    const goHighLevelEndpoint = 'https://services.leadconnectorhq.com/hooks/YOUR_FORM_ID/webhook-trigger/YOUR_WEBHOOK_ID';
-    
-    // Prepare data for Go HighLevel
-    const highLevelData = {
-        formId: 'YOUR_FORM_ID', // Replace with your form ID
-        firstName: formData.name.split(' ')[0],
-        lastName: formData.name.split(' ').slice(1).join(' ') || 'Not provided',
-        email: formData.email,
-        phone: formData.phone,
-        address: formData.address,
-        source: 'Website Form',
-        notes: `Roofing Issue: ${formData.issue}\nAdditional Details: ${formData.message}`
-    };
-    
-    // Send data to Go HighLevel
-    fetch(goHighLevelEndpoint, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-        },
-        body: JSON.stringify(highLevelData)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
+// HubSpot Form Integration
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for HubSpot form to load
+    const checkFormLoaded = setInterval(function() {
+        const hsForm = document.querySelector('.hs-form-frame iframe');
+        if (hsForm) {
+            clearInterval(checkFormLoaded);
+            
+            // Listen for form submission
+            hsForm.addEventListener('load', function() {
+                const iframeDoc = hsForm.contentDocument || hsForm.contentWindow.document;
+                const form = iframeDoc.querySelector('form');
+                
+                if (form) {
+                    form.addEventListener('submit', function() {
+                        // Redirect to thank you page after form submission
+                        setTimeout(function() {
+                            window.location.href = 'thankyou.html';
+                        }, 1000);
+                    });
+                }
+            });
         }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Successfully sent to Go HighLevel:', data);
-        // Redirect to thank you page
-        window.location.href = 'thankyou.html';
-    })
-    .catch((error) => {
-        console.error('Error sending to Go HighLevel:', error);
-        // Fallback: Still redirect to thank you page even if CRM submission fails
-        window.location.href = 'thankyou.html';
-    });
-}
+    }, 500);
+    
+    // Add scroll functionality to form on desktop
+    if (window.innerWidth > 768) {
+        const formContainer = document.getElementById('formContainer');
+        const formWrapper = document.querySelector('.form-wrapper');
+        
+        if (formContainer && formWrapper) {
+            formContainer.style.overflow = 'hidden';
+            formWrapper.style.height = '568px';
+            formWrapper.style.overflowY = 'auto';
+            formWrapper.style.paddingRight = '15px';
+            
+            // Add custom scrollbar styling
+            formWrapper.style.scrollbarWidth = 'thin';
+            formWrapper.style.scrollbarColor = 'var(--primary) var(--light-gray)';
+            
+            // Show scroll indicator
+            const scrollIndicator = document.querySelector('.form-scroll-indicator');
+            if (scrollIndicator) {
+                scrollIndicator.style.display = 'block';
+                
+                // Hide indicator when user scrolls
+                formWrapper.addEventListener('scroll', function() {
+                    if (formWrapper.scrollTop > 50) {
+                        scrollIndicator.style.opacity = '0';
+                        scrollIndicator.style.transition = 'opacity 0.5s ease';
+                    } else {
+                        scrollIndicator.style.opacity = '1';
+                    }
+                });
+            }
+        }
+    }
+});
 
 // Ensure form is scrollable on mobile
 if (window.innerWidth <= 768) {
