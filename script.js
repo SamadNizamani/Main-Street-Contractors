@@ -41,7 +41,21 @@ document.addEventListener('DOMContentLoaded', function() {
                     form.addEventListener('submit', function() {
                         // Redirect to thank you page after form submission
                         setTimeout(function() {
-                            window.location.href = 'thankyou.html';
+                            window.location.href = 'roofing-thankyou.html';
+                        }, 1000);
+                    });
+                }
+            });
+            // Listen for form submission
+            hsForm.addEventListener('load', function() {
+                const iframeDoc = hsForm.contentDocument || hsForm.contentWindow.document;
+                const form = iframeDoc.querySelector('form');
+                
+                if (form) {
+                    form.addEventListener('submit', function() {
+                        // Redirect to thank you page after form submission
+                        setTimeout(function() {
+                            window.location.href = 'kitchen-bath-thankyou.html';
                         }, 1000);
                     });
                 }
