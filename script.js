@@ -25,7 +25,6 @@
     });
 
     // HubSpot Form Integration
-    // HubSpot Form Integration
 document.addEventListener('DOMContentLoaded', function() {
     // Wait for HubSpot form to load
     const checkFormLoaded = setInterval(function() {
@@ -39,9 +38,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const form = iframeDoc.querySelector('form');
                 
                 if (form) {
-                    form.addEventListener('submit', function() {
-                        // Check which page we're on and redirect accordingly
-                        const currentPage = window.location.pathname;
+                    form.addEventListener('submit', function(e) {
+                        // Better way to detect current page
+                        const currentPath = window.location.pathname;
+                        const currentPage = currentPath.split('/').pop(); // Gets just the filename
+                        
+                        console.log('Current page:', currentPage); // Debugging
                         
                         if (currentPage.includes('roofing')) {
                             setTimeout(function() {
@@ -62,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }, 500);
+
     
     // ... rest of your code
 
