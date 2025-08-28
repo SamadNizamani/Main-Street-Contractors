@@ -1,3 +1,4 @@
+/* Additional Styles for Kitchen & Bath and Homepage */
 :root {
     --primary: #ff6b00;
     --primary-dark: #e65a00;
@@ -884,5 +885,112 @@ footer {
         height: auto !important;
         min-height: 500px;
         overflow-y: visible !important;
+    }
+}
+/* Hero Variations */
+.roofing-hero {
+    background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.9)), 
+                url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80') no-repeat center center/cover;
+}
+
+.kitchen-hero {
+    background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.9)), 
+                url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+}
+
+/* Accent Color for Kitchen & Bath */
+.btn-accent {
+    background: #2a9d8f;
+    color: white;
+}
+
+.btn-accent:hover {
+    background: #22867a;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(42, 157, 143, 0.3);
+}
+
+/* Services Overview Section */
+.services-overview {
+    padding: 100px 0;
+    background: var(--light);
+}
+
+.service-overview-card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-bottom: 50px;
+}
+
+.service-overview-img {
+    flex: 1;
+    min-height: 400px;
+}
+
+.service-overview-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-overview-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.service-overview-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.service-overview-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: var(--gray);
+}
+
+.service-overview-content ul {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.service-overview-content li {
+    margin-bottom: 10px;
+    color: var(--gray);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .service-overview-card {
+        flex-direction: column;
+    }
+    
+    .service-overview-img {
+        min-height: 300px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-overview-content {
+        padding: 25px;
+    }
+    
+    .service-overview-content h3 {
+        font-size: 1.6rem;
     }
 }
